@@ -1,3 +1,4 @@
+/* CORRECIÓN */
 * {
  margin: 0;
  padding: 0;
@@ -10,104 +11,70 @@ body {
  background: #ff7f52;
 }
 
-.contenedor__transiciones {
+.contenedor-transiciones {
  width: 90%;
  margin: 40px auto;
  padding: 20px;
  border: 2px solid #fff;
 }
-
-.contenedor__elemento {
- background: #fff;
+.contenedor-transiciones__cuadro{
+ background: #000;
  width: 150px;
  height: 150px;
+}
 
+.contenedor-transiciones__cuadro--animacion-1{
  transition-property: border-radius, transform;
  transition-duration: 0.5s;
  transition-timing-function: ease-out;
 }
-
-.contenedor__transiciones:hover .contenedor__elemento {
- border-radius: 50%;
+.contenedor-transiciones:hover .contenedor-transiciones__cuadro--animacion-1{
+	border-radius: 50%;
  transform: translate(1000px);
 }
 
-/*Color*/
-
-.elemento-color__animacion {
- background: #fff;
- width: 150px;
- height: 150px;
+.contenedor-transiciones__cuadro--animacion-2{
  transition-timing-function: ease-in-out;
-
  transition-property: border-radius, transform;
  transition-duration: 0.5s;
 }
 
-.contenedor__transiciones:hover .elemento-color__animacion {
- border-radius: 50%;
+.contenedor-transiciones:hover .contenedor-transiciones__cuadro--animacion-2{
+	border-radius: 50%;
  transform: translate(1000px);
  background: green;
 }
-/*Color*/
-/*Junto*/
 
-.elemento-juntas__animacion {
- background: #fff;
- width: 150px;
- height: 150px;
-
- /*transition-property: border-radius, transform;
- transition-duration: 0.5s;
- transition-timing-function: ease-out;*/
-
+.contenedor-transiciones__cuadro--animacion-3{
  transition: border-radius 5s, transform 1.7s ease-in;
 }
-
-.contenedor__transiciones:hover .elemento-juntas__animacion {
- border-radius: 50%;
+.contenedor-transiciones:hover .contenedor-transiciones__cuadro--animacion-3{
+	border-radius: 50%;
  transform: translate(1000px);
  background: rgb(0, 9, 128);
 }
-
-/*Delay*/
-
-.contenedor-delay__elemento {
- background: #fff;
- width: 150px;
- height: 150px;
-
+.contenedor-transiciones__cuadro--animacion-4{
  transition-property: border-radius, transform;
  transition-duration: 0.5s;
  transition-timing-function: ease;
 }
-
-.contenedor__transiciones:hover .contenedor-delay__elemento {
- border-radius: 50%;
+.contenedor-transiciones:hover .contenedor-transiciones__cuadro--animacion-4{
+	border-radius: 50%;
  transform: translate(1000px);
  background: rgba(207, 243, 6, 0.836);
  transition-delay: 1s;
 }
 
-/*Delay*/
-/*Cubic*/
-
-.contenedor-cubic__elemento {
- background: #fff;
- width: 150px;
- height: 150px;
+.contenedor-transiciones__cuadro--animacion-5{
  transition-timing-function: ease-in-out;
-
  transition-property: border-radius, transform;
  transition-duration: 0.5s;
-
  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
-.contenedor__transiciones:hover .contenedor-cubic__elemento {
- border-radius: 50%;
+.contenedor-transiciones:hover .contenedor-transiciones__cuadro--animacion-5{
+	border-radius: 50%;
  transform: translate(1000px);
  background: rgb(235, 8, 8);
 }
+/* CORRECIÓN */
